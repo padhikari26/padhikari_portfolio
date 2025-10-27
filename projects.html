@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects • Purnima Adhikari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+  <meta name="description" content="Explore projects by Purnima Adhikari, including machine learning models, open source contributions and hackathon prototypes." />
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
+          <span>Purnima Adhikari</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
+        <div class="mobile-menu" aria-label="Mobile menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding-top:3rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">Projects</span>
+          <h2 class="title">Featured work</h2>
+          <p class="desc">Below are some of my favourite projects. Each has taught me something new about algorithms, data and how to turn an idea into a working product. Click through to learn more, see screenshots, watch demo videos and explore the code.</p>
+        </div>
+        <div class="grid grid-2">
+          <!-- ThreatModel AI project card -->
+          <div class="card">
+            <h3>ThreatModel AI</h3>
+            <p>A real‑time anomaly detection system built to flag unusual activity in network traffic. Achieves <strong>94% accuracy</strong> using unsupervised machine learning techniques such as Isolation Forests and k‑NN. Developed in Python with scikit‑learn and deployed as a REST API.</p>
+            <p>What I learned: streaming data processing, model evaluation, and the importance of model explainability for security applications.</p>
+            <!-- Optional embedded video placeholder; replace src with your own video link -->
+            <video controls style="width:100%;border-radius:8px;margin-top:0.5rem;" poster="" src=""></video>
+            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+              <a href="#" class="btn">Project Details</a>
+              <a href="#" class="btn" style="background-color:var(--primary);">View Code</a>
+            </div>
+          </div>
+          <!-- Open source contributions card -->
+          <div class="card">
+            <h3>Open Source Contributions</h3>
+            <p>I’ve contributed to <strong>4</strong> open‑source projects ranging from documentation improvements and bug fixes to adding new features. My pull requests have been merged into projects such as <em>ExampleLib</em> and <em>DataViz.js</em>.</p>
+            <p>What I learned: collaboration on distributed teams, code review best practices and the value of community‑driven software.</p>
+            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+              <a href="#" class="btn">See contributions</a>
+            </div>
+          </div>
+          <!-- Placeholder for additional projects -->
+          <div class="card">
+            <h3>Your Next Project</h3>
+            <p>Use this template to showcase another project. You can include a short description, highlight the technologies used, embed a video demo or add screenshots. Be selective — lead with your most impressive work.</p>
+            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+              <a href="#" class="btn">Add Details</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Robotics Logistics Optimizer</h3>
+            <p>An algorithm I designed for our Robotics team to optimize the path planning and task allocation for autonomous robots during competitions. Improved task completion speed by 30% over the baseline.</p>
+            <p>What I learned: combinatorial optimization, heuristics and simulation testing.</p>
+            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+              <a href="#" class="btn">Project Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Purnima Adhikari • All rights reserved
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

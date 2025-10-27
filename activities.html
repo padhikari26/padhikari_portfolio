@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activities • Purnima Adhikari</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Mobile menu script -->
+  <script defer src="assets/js/main.js"></script>
+  <meta name="description" content="Discover Purnima Adhikari’s extracurricular activities and leadership roles." />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <!-- Header navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
+          <span>Purnima Adhikari</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
+        <div class="mobile-menu" aria-label="Mobile menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding-top:3rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">Extracurriculars</span>
+          <h2 class="title">Activities &amp; Leadership</h2>
+          <p class="desc">Clubs, competitions and volunteer work highlight my passion beyond the classroom.</p>
+        </div>
+        <div class="grid grid-2">
+          <!-- Robotics team card -->
+          <div class="card">
+            <h3>Robotics Team</h3>
+            <p>I served as the logistics lead on our Robotics team, coordinating tasks and designing algorithms that improved path planning efficiency by 30%. Our team placed highly at local competitions.</p>
+            <p>What I learned: teamwork, combinatorial optimisation and real‑world applications of algorithms.</p>
+          </div>
+          <!-- CS club card -->
+          <div class="card">
+            <h3>Computer Science Club &amp; Hackathons</h3>
+            <p>Active member of our school’s CS club, organising weekly coding challenges and workshops. I also participate in regional hackathons such as City Hack and CodeFest, where my teams have earned awards for innovative solutions.</p>
+            <p>What I learned: collaborative coding, rapid prototyping and problem‑solving under time constraints.</p>
+          </div>
+          <!-- Outreach card -->
+          <div class="card">
+            <h3>STEM Outreach &amp; Tutoring</h3>
+            <p>I volunteer with the Women in STEM initiative to mentor middle‑school students interested in coding. I also tutor peers in AP Computer Science and mathematics, helping them grasp fundamental concepts.</p>
+            <p>What I learned: communication, leadership and the importance of mentorship.</p>
+          </div>
+          <!-- Placeholder card -->
+          <div class="card">
+            <h3>Your Activity Here</h3>
+            <p>Use this template to highlight another extracurricular activity or leadership role. Keep the description concise and focus on the impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Purnima Adhikari • All rights reserved
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

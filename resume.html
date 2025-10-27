@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résumé • Purnima Adhikari</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Mobile menu script -->
+  <script defer src="assets/js/main.js"></script>
+  <meta name="description" content="View the résumé of Purnima Adhikari including education, experience and skills." />
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
+          <span>Purnima Adhikari</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
+        <div class="mobile-menu" aria-label="Mobile menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding-top:3rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">Résumé</span>
+          <h2 class="title">Education, Experience &amp; Skills</h2>
+          <p class="desc">This page summarises my qualifications.  A downloadable PDF résumé is available below.</p>
+        </div>
+        <div class="grid grid-2" style="align-items:flex-start;">
+          <!-- Education & Experience column -->
+          <div class="card">
+            <h3>Education</h3>
+            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
+              <li><strong>Cumberland Valley High School</strong> — Mechanicsburg, PA (Expected 2026)</li>
+              <li>GPA: 4.0/4.0</li>
+              <li>Relevant coursework: AP Computer Science A, AP Calculus, Discrete Mathematics, Probability &amp; Statistics</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
+              <li><strong>Research Intern, Data Science Lab</strong> — Summer 2024<br/>Conducted exploratory data analysis and implemented machine learning models for anomaly detection.</li>
+              <li><strong>Robotics Team Logistics Lead</strong> — 2023–present<br/>Designed path planning algorithms and coordinated team logistics; improved efficiency by 30%.</li>
+              <li><strong>Hackathon Participant</strong> — 2024–2025<br/>Participated in City Hack and CodeFest, winning first place for a smart transit prototype.</li>
+            </ul>
+          </div>
+          <!-- Skills & Download column -->
+          <div class="card">
+            <h3>Technical Skills</h3>
+            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
+              <li>Languages: Python, Java, C++</li>
+              <li>Frameworks/Tools: scikit‑learn, pandas, NumPy, Git, Linux</li>
+              <li>Concepts: Machine Learning, Algorithms, Cybersecurity</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1.5rem;">
+              <li>Leadership and teamwork</li>
+              <li>Communication and mentoring</li>
+              <li>Time management and organisation</li>
+            </ul>
+            <a href="assets/resume/Purnima_Adhikari_Resume.pdf" class="btn" download style="background-color:var(--primary);">Download PDF Résumé</a>
+            <p class="muted" style="margin-top:0.5rem;font-size:0.85rem;">Replace the PDF in <code>assets/resume/</code> with your own résumé and update the link if necessary.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Purnima Adhikari • All rights reserved
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

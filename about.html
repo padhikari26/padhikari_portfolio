@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Purnima Adhikari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+  <meta name="description" content="Learn more about Purnima Adhikari — a high school senior passionate about computer science, AI and cybersecurity." />
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
+          </svg>
+          <span>Purnima Adhikari</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="mobile-menu" aria-label="Mobile menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Introduction section -->
+    <section style="padding-top:3rem;">
+      <div class="container grid grid-2" style="align-items:center; gap:2rem;">
+        <div>
+          <h1 class="title" style="font-size:2rem;">Hi, I’m Purnima — I turn complex data into intelligent solutions.</h1>
+          <p class="desc" style="font-size:1.15rem;margin-top:0.5rem;max-width:600px;">
+            I’m currently a senior at <strong>Cumberland Valley High School</strong> in Pennsylvania. My passions lie at the
+            intersection of <strong>Computer Science</strong>, <strong>Artificial Intelligence/Machine Learning</strong>, and
+            <strong>Cybersecurity</strong>. I thrive on challenges and enjoy building tools that unlock insights from
+            data to make people's lives better.
+          </p>
+          <div class="kpis" style="margin-top:1rem; gap:2rem;">
+            <div class="kpi">
+              <b>1</b><span>Cyber Camp Completed</span>
+            </div>
+            <div class="kpi">
+              <b>4</b><span>Open‑source Projects</span>
+            </div>
+          </div>
+          <div style="margin-top:1.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="projects.html" class="btn">Explore Projects</a>
+            <a href="resume.html" class="btn" style="background-color:var(--primary);">View Résumé</a>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <!-- Placeholder for headshot. Replace src with your own image -->
+          <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Headshot placeholder" style="width:100%;max-width:350px;border-radius:18px;object-fit:cover;" />
+          <p class="desc" style="margin-top:0.5rem;color:var(--muted);">Replace with a professional headshot when ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal statement section -->
+    <section style="background-color:#f9fafc;">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">Personal Statement</span>
+          <h2 class="title">Why Computer Science</h2>
+          <p class="desc">This is an opportunity to tell your story. Admissions officers appreciate hearing why you love this field and what drives your curiosity.</p>
+        </div>
+        <div class="card" style="max-width:850px;margin:0 auto;">
+          <p>
+            My interest in technology began when I realized the power of <strong>algorithms</strong> to optimize problems — whether it’s
+            designing a logistics solution for my school’s Robotics team or uncovering patterns in noisy datasets. Over the years
+            I’ve focused on projects that combine <strong>machine learning</strong> with practical impact, and I’m excited about
+            advancing work at the intersection of <strong>AI and cybersecurity</strong>. I believe technology can and should be used
+            ethically to protect data and empower people.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Purnima Adhikari • All rights reserved
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

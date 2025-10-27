@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Purnima Adhikari</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Mobile menu script -->
+  <script defer src="assets/js/main.js"></script>
+  <meta name="description" content="Get in touch with Purnima Adhikari via email, LinkedIn or GitHub." />
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
+          <span>Purnima Adhikari</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
+        <div class="mobile-menu" aria-label="Mobile menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="activities.html">Activities</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="resume.html">Résumé</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding-top:3rem;">
+      <div class="container">
+        <div class="section-header" style="text-align:left;">
+          <span class="kicker">Contact</span>
+          <h2 class="title">Get in Touch</h2>
+          <p class="desc">Thank you for taking the time to explore my portfolio.  If you’d like to discuss my work, collaborate on a project or simply say hello, feel free to reach out using any of the methods below.</p>
+        </div>
+        <div class="grid grid-2">
+          <!-- Contact details column -->
+          <div class="card">
+            <h3>Contact Information</h3>
+            <ul style="list-style-type:none;margin:0;padding:0;font-size:0.95rem;">
+              <li><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+            </ul>
+            <p class="muted" style="margin-top:0.5rem;font-size:0.85rem;">Replace the placeholders with your actual contact details.</p>
+          </div>
+          <!-- Contact form column -->
+          <div class="card">
+            <h3>Send a Message</h3>
+            <p class="muted" style="margin-bottom:0.5rem;">Feel free to send me a message using the form below.  Messages will be delivered to my email.  Replace the form action with your backend service (e.g. Formspree).</p>
+            <form action="#" method="POST" style="display:flex;flex-direction:column;gap:0.5rem;">
+              <label for="name" style="font-weight:600;font-size:0.9rem;">Name</label>
+              <input type="text" id="name" name="name" required style="padding:0.5rem;border:1px solid #ccc;border-radius:4px;">
+              <label for="email" style="font-weight:600;font-size:0.9rem;">Email</label>
+              <input type="email" id="email" name="email" required style="padding:0.5rem;border:1px solid #ccc;border-radius:4px;">
+              <label for="message" style="font-weight:600;font-size:0.9rem;">Message</label>
+              <textarea id="message" name="message" rows="5" required style="padding:0.5rem;border:1px solid #ccc;border-radius:4px;"></textarea>
+              <button type="submit" class="btn" style="align-self:flex-start;background-color:var(--primary);">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Purnima Adhikari • All rights reserved
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
