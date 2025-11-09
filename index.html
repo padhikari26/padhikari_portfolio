@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Main script -->
   <script defer src="assets/js/main.js"></script>
-  <meta name="description" content="The personal portfolio of Purnima Adhikari, a passionate CS/AI applicant showcasing projects, achievements and experiences." />
+  <meta name="description" content="Portfolio of Purnima Adhikari — aspiring Computer Science undergraduate. Projects include COVID-19 research, community app NAFA Samaj, teaching Python and more." />
 </head>
 <body>
   <!-- Accessible skip link for screen readers -->
@@ -24,7 +24,7 @@
       <nav class="navbar" aria-label="Main navigation">
         <a class="brand" href="index.html">
           <!-- Simple star icon as logo -->
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="28" height="28">
             <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
           </svg>
           <span>Purnima Adhikari</span>
@@ -64,18 +64,92 @@
     <section style="padding-top:3rem;">
       <div class="container grid grid-2" style="align-items:center; gap:2rem;">
         <div>
-          <h1 style="font-size:2.5rem;margin-bottom:0.5rem;">Welcome — I'm Purnima Adhikari</h1>
-          <p style="font-size:1.25rem;color:var(--muted);max-width:550px;">
-            I’m a senior at <strong>Cumberland Valley High School</strong> passionate about
-            <strong>Computer Science</strong>, <strong>AI/Machine Learning</strong>, <strong>Cybersecurity</strong>, and much more. 
+          <h1 style="font-size:2.5rem;margin-bottom:0.5rem;">Hi — I'm Purnima Adhikari</h1>
+          <p style="font-size:1.15rem;color:var(--muted);max-width:680px;line-height:1.5;">
+            I’m a high school senior applying to Computer Science programs. I build data-driven tools, conduct research, and teach programming — driven by a desire to create meaningful impact in my community. My journey began after moving to the United States at age seven; since first grade I’ve explored computing through scratch programs, school websites, and increasingly sophisticated projects in AI, data science, and cybersecurity.
           </p>
+
           <div style="margin-top:1.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="projects.html" class="btn">Explore Projects</a>
-            <a href="resume.html" class="btn" style="background-color:var(--primary);">View Résumé</a>
+            <a href="projects.html" class="btn" aria-label="Explore Projects">Explore Projects</a>
+            <a href="resume.html" class="btn" style="background-color:var(--primary);" aria-label="View Résumé">View Résumé</a>
+          </div>
+
+          <!-- Hero tiles: three priority stories -->
+          <div style="margin-top:1.8rem; display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem;">
+            <a href="projects.html#covid-research" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
+              <h3 style="margin:0 0 0.4rem 0;">COVID-19 Research</h3>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Analyzed JHU CSSE data; presented findings at a student symposium in College Park, MD.</p>
+            </a>
+
+            <a href="projects.html#nafa-samaj" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
+              <h3 style="margin:0 0 0.4rem 0;">NAFA Samaj (App)</h3>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Launched a community-focused app — designed and built the backend & core features.</p>
+            </a>
+
+            <a href="projects.html#eaglefc" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
+              <h3 style="margin:0 0 0.4rem 0;">EagleFC — Athletics</h3>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Club soccer experience taught me leadership, persistence, and teamwork — skills I apply to technical projects.</p>
+            </a>
           </div>
         </div>
+
         <div style="text-align:center;">
-          <img src="cached_assets_used/ai_concept.jpg" alt="Artificial intelligence concept art" style="width:100%;border-radius:12px;object-fit:cover;" />
+          <img src="cached_assets_used/ai_concept.jpg" alt="Abstract artificial intelligence concept with network nodes and data visualization" style="width:100%;border-radius:12px;object-fit:cover;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Introduction section -->
+    <section aria-labelledby="about-heading" style="padding:2rem 0;">
+      <div class="container" style="max-width:900px;">
+        <h2 id="about-heading" style="margin-bottom:0.75rem;">About me</h2>
+
+        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
+          I moved to the United States when I was seven and began school in first grade. Over the years, computers moved from being a hobby to a clear passion — I started with Scratch and Code.org lessons, then built simple school websites. Each project pushed me to learn a new concept: HTML and CSS for layouts, Python for logic, then data analysis and machine learning for research questions, and fundamentals of cybersecurity for safe systems.
+        </p>
+
+        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
+          My COVID-19 research used public datasets from Johns Hopkins to explore trends in infections and outcomes across countries; I documented my process in reproducible notebooks and presented key findings at a symposium in College Park, MD. That project taught me not only technical skills — data cleaning, visualization, and basic statistical testing — but also how to explain technical results to an audience from many backgrounds.
+        </p>
+
+        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
+          To turn learning into service, I launched a Python Bootcamp and teach students overseas who are beginning their programming journeys. Teaching has sharpened my explanations, improved my patience, and shown me how empowered learners can become when given the right guidance. I also launched <strong>NAFA Samaj</strong>, a community app that reflects my interest in building tools that help people connect and share resources.
+        </p>
+
+        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
+          Outside of technology, I play club soccer for <strong>EagleFC</strong>. Competing on the field taught me how to manage time, lead small teams, and keep pushing when a solution isn’t obvious — the same persistence that helps me debug tricky code. I’m applying to study Computer Science in college because I want to advance my technical skills and scale the impact of the projects I build — especially those that help communities and create learning opportunities for others.
+        </p>
+
+        <p style="margin-bottom:0.5rem; color:var(--muted); line-height:1.6;">
+          If you’d like, I can share more detailed project pages (with screenshots, code, and slides), a one-page résumé, or a downloadable portfolio PDF. I’m also happy to add short video demos or a few quick testimonials from students I’ve taught.
+        </p>
+
+        <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <a href="projects.html" class="btn">See detailed projects</a>
+          <a href="resume.html" class="btn" style="background-color:var(--primary);">Download résumé</a>
+          <a href="contact.html" class="btn" style="background-color:transparent;border:1px solid var(--primary);color:var(--primary);">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick "What I bring" skills summary -->
+    <section aria-labelledby="skills-heading" style="padding-bottom:3rem;">
+      <div class="container" style="max-width:900px;">
+        <h3 id="skills-heading" style="margin-bottom:0.6rem;">What I bring</h3>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <div class="card" style="flex:1; min-width:200px;">
+            <h4 style="margin-top:0;">Technical skills</h4>
+            <p style="margin:0;color:var(--muted);">Python · Flask · HTML/CSS · Git/GitHub · pandas · matplotlib · SQL basics</p>
+          </div>
+          <div class="card" style="flex:1; min-width:200px;">
+            <h4 style="margin-top:0;">Highlights</h4>
+            <ul style="margin:0;color:var(--muted);padding-left:1rem;">
+              <li>Presented COVID-19 research at a symposium</li>
+              <li>Launched NAFA Samaj (community app)</li>
+              <li>Started a Python Bootcamp teaching students overseas</li>
+              <li>Club soccer (EagleFC) — leadership & teamwork</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -84,9 +158,24 @@
   <footer>
     © <span id="year"></span> Purnima Adhikari • All rights reserved
   </footer>
+
   <script>
     // Insert current year into footer
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Basic accessibility enhancement: make hamburger open mobile nav if main.js isn't present
+    (function () {
+      var hb = document.querySelector('.hamburger');
+      var menu = document.querySelector('.mobile-menu');
+      if (hb && menu) {
+        hb.addEventListener('click', function () {
+          menu.classList.toggle('open');
+        });
+        hb.addEventListener('keypress', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') menu.classList.toggle('open');
+        });
+      }
+    })();
   </script>
 </body>
 </html>
