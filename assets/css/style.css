@@ -6,10 +6,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Spectral:wght@500;600;700&display=swap');
 
  :root {
-   --primary: #43ab77;   /* deep academic blue */
-   --accent:  #226722;   /* soft supportive blue */
-   --text:    #0d1117;   /* charcoal */
-   --muted:   #6c7a8c;   /* grey-blue */
+   --primary: #43ab77;   
+   --accent:  #226722;   
+   --text:    #0d1117;   
+   --muted:   #6c7a8c;   
    --bg:      #ffffff;
    --surface: #f7f9fc;
    --border:  #e3e8ef;
