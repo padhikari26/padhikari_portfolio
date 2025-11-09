@@ -4,23 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Résumé • Purnima Adhikari</title>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Mobile menu script -->
   <script defer src="assets/js/main.js"></script>
   <meta name="description" content="View the résumé of Purnima Adhikari including education, experience and skills." />
 </head>
+
 <body>
   <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
   <header>
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
         <a class="brand" href="index.html">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
+          </svg>
           <span>Purnima Adhikari</span>
         </a>
         <div class="nav-links">
@@ -30,7 +31,7 @@
           <a href="achievements.html">Achievements</a>
           <a href="activities.html">Activities</a>
           <a href="coursework.html">Coursework</a>
-          <a href="resume.html">Résumé</a>
+          <a href="resume.html" class="active" aria-current="page">Résumé</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
@@ -41,7 +42,7 @@
           <a href="achievements.html">Achievements</a>
           <a href="activities.html">Activities</a>
           <a href="coursework.html">Coursework</a>
-          <a href="resume.html">Résumé</a>
+          <a href="resume.html" aria-current="page">Résumé</a>
           <a href="contact.html">Contact</a>
         </div>
       </nav>
@@ -54,41 +55,79 @@
         <div class="section-header">
           <span class="kicker">Résumé</span>
           <h2 class="title">Education, Experience &amp; Skills</h2>
-          <p class="desc">This page summarises my qualifications.  A downloadable PDF résumé is available below.</p>
+          <p class="desc">A summary of my academic background, technical experience, and leadership work. A downloadable PDF résumé is available below.</p>
         </div>
+
         <div class="grid grid-2" style="align-items:flex-start;">
-          <!-- Education & Experience column -->
+
+          <!-- Left Column: Education + Experience -->
           <div class="card">
             <h3>Education</h3>
-            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
+            <ul style="margin-left:1.25rem;margin-bottom:1.25rem;line-height:1.5;">
               <li><strong>Cumberland Valley High School</strong> — Mechanicsburg, PA (Class of 2026)</li>
-              <li>GPA: 4.0/4.0</li>
-              <li>Relevant coursework: Computer Science/Programming I &amp; II, AP Precalculus, College Calculus I &amp; II, Probability &amp; Statistics</li>
+              <li><strong>GPA:</strong> 91/100 Unweighted, 93/100 Weighted (≈ 3.7/4.0 equivalent)</li>
+              <li><strong>Relevant Coursework:</strong> *H Comp Sci/Programming II; CNT120 (DE); College CIS (DE); Calculus I (DE); Calculus II (DE); College Calculus (HS); Statistics; AP Precalculus; *H Chemistry; Conceptual Physics</li>
             </ul>
+
             <h3>Experience</h3>
-            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
-              <li><strong>Research Intern, Data Science Lab</strong> — Summer 2024<br/>Conducted exploratory data analysis and implemented machine learning models for anomaly detection.</li>
-              <li><strong>Robotics Team Logistics Lead</strong> — 2023–present<br/>Designed path planning algorithms and coordinated team logistics; improved efficiency by 30%.</li>
-              <li><strong>Hackathon Participant</strong> — 2024–2025<br/>Participated in City Hack and CodeFest, winning first place for a smart transit prototype.</li>
+            <ul style="margin-left:1.25rem;line-height:1.55;">
+
+              <li><strong>Python Bootcamp — Instructor & Founder</strong> (Aug 2025 – Present)<br>
+                Lead weekly virtual programming lessons for students overseas using Zoom and an online IDE (transitioning to Replit/VS Code). Planning to introduce Discord/Google Classroom to support collaboration and peer discussion.<br>
+                <em>Focus:</em> fundamentals, debugging, and building confidence in beginners.
+              </li><br>
+
+              <li><strong>Data Science Researcher — The Coding School</strong> (Jul 7 – Aug 8, 2025)<br>
+                Conducted EDA and visualization on the Johns Hopkins COVID-19 dataset to understand vaccination impact and mortality trends. Presented findings at a student symposium in College Park, MD.
+              </li><br>
+
+              <li><strong>Co-Developer — NAFA Samaj Community App</strong> (2025)<br>
+                Built a mobile app serving the Nepalese community in Arizona for events, announcements, and resource coordination. Prioritized accessibility and community-driven features.
+              </li><br>
+
+              <li><strong>AI Scholar — Inspirit AI</strong> (Summer 2024)<br>
+                Developed machine learning models to predict crop yield using soil-microbe data; Random Forest demonstrated strongest performance. Proposed next steps for scaling and interpretability.
+              </li><br>
+
+              <li><strong>Participant — Harvard AI Bootcamp</strong> (Jun 9 – 13, 2025)<br>
+                Hands-on experimentation with multimodal models (text, image, audio), prompt tuning techniques, and project documentation.
+              </li><br>
+
+              <li><strong>Midfield Player — EagleFC</strong> (Ongoing)<br>
+                Placed <strong>2nd</strong> and <strong>3rd</strong> in regional tournaments. Developed tactical decision-making, resilience, and communication under pressure.
+              </li><br>
+
+              <li><strong>Co-Planner — Nepali Student Association (NSA)</strong> (Ongoing)<br>
+                Support event planning, outreach, and cultural programming that helps students build community and belonging.
+              </li>
+
             </ul>
           </div>
-          <!-- Skills & Download column -->
+
+          <!-- Right Column: Skills + Download -->
           <div class="card">
+
             <h3>Technical Skills</h3>
-            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1rem;">
-              <li>Languages: Python, Java, C++</li>
-              <li>Frameworks/Tools: scikit‑learn, pandas, NumPy, Git, Linux</li>
-              <li>Concepts: Machine Learning, Algorithms, Cybersecurity</li>
+            <ul style="margin-left:1.25rem;margin-bottom:1rem;line-height:1.55;">
+              <li><strong>Languages:</strong> Python, Java, C++</li>
+              <li><strong>Data & ML:</strong> Pandas, NumPy, Matplotlib, scikit-learn</li>
+              <li><strong>Web & Apps:</strong> HTML/CSS, Flask, Mobile app development (in progress)</li>
+              <li><strong>Systems & Tools:</strong> Git/GitHub, basic SQL, Cisco Packet Tracer, Linux basics</li>
+              <li><strong>Foundations:</strong> Data structures, algorithms, networking fundamentals, cybersecurity basics</li>
             </ul>
+
             <h3>Soft Skills</h3>
-            <ul style="list-style-type:disc;margin-left:1.25rem;margin-bottom:1.5rem;">
-              <li>Leadership and teamwork</li>
-              <li>Communication and mentoring</li>
-              <li>Time management and organisation</li>
+            <ul style="margin-left:1.25rem;margin-bottom:1.75rem;line-height:1.55;">
+              <li>Peer instruction & mentorship</li>
+              <li>Collaboration & communication</li>
+              <li>Time-management & project organization</li>
             </ul>
+
             <a href="assets/resume/Purnima_Adhikari_Resume.pdf" class="btn" download style="background-color:var(--primary);">Download PDF Résumé</a>
-            <p class="muted" style="margin-top:0.5rem;font-size:0.85rem;">Replace the PDF in <code>assets/resume/</code> with your own résumé and update the link if necessary.</p>
+            <p style="margin-top:0.6rem;font-size:0.9rem;color:var(--muted);">Contact: <strong>purnima.adhikari820@gmail.com</strong> • GitHub: <strong>padhikari26</strong></p>
+
           </div>
+
         </div>
       </div>
     </section>
@@ -97,6 +136,7 @@
   <footer>
     © <span id="year"></span> Purnima Adhikari • All rights reserved
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

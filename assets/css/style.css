@@ -1,293 +1,184 @@
 /*
- * Portfolio Website Stylesheet
- *
- * This file defines a modern, responsive theme for your portfolio website. It uses
- * CSS variables for colors so you can easily adjust the palette in one place.
- * The layout is built with flexbox and CSS grid for adaptability across devices,
- * and includes styles for the header navigation, responsive mobile menu,
- * sections, cards, buttons and a simple grid system. Feel free to tweak
- * properties such as padding, colors and font sizes to suit your own taste.
+ * Portfolio Website Stylesheet — Refined Academic Theme
+ * Calm, research-inspired colors with serif heading accents.
  */
 
-:root {
-  /* Primary brand colour used for the header and accents */
-  --primary: #0e2a47;
-  /* Accent colour used for links and highlights */
-  --accent: #4f8cc0;
-  /* Base text colour */
-  --text: #1a1a1a;
-  /* Muted text colour for secondary information */
-  --muted: #666666;
-  /* Background colour for the page */
-  --bg: #ffffff;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Spectral:wght@500;600;700&display=swap');
 
-/* Global resets */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+ :root {
+   --primary: #0a3a5f;   /* deep academic blue */
+   --accent:  #5da7e4;   /* soft supportive blue */
+   --text:    #0d1117;   /* charcoal */
+   --muted:   #6c7a8c;   /* grey-blue */
+   --bg:      #ffffff;
+   --surface: #f7f9fc;
+   --border:  #e3e8ef;
+ 
+   --shadow:        0 4px 14px rgba(15,23,42,.06);
+   --shadow-hover:  0 10px 24px rgba(15,23,42,.12);
+ }
+ 
+ /* Optional automatic dark mode */
+ @media (prefers-color-scheme: dark){
+   :root{
+     --bg:#0b1220; --text:#f3f6fa; --muted:#b8c1d8;
+     --surface:#0f172a; --border:#1f2a44;
+     --primary:#5db1ff; --accent:#82c3ff;
+     --shadow:0 6px 14px rgba(0,0,0,.4);
+     --shadow-hover:0 12px 24px rgba(0,0,0,.48);
+   }
+ }
+ 
+ /* Global reset */
+ * { box-sizing:border-box; margin:0; padding:0; }
+ body {
+   font-family: 'Inter', sans-serif;
+   background: var(--bg);
+   color: var(--text);
+   line-height: 1.6;
+ }
+ 
+ a {
+   color: var(--accent);
+   text-decoration: none;
+ }
+ a:hover { text-decoration: underline; }
+ 
+ /* Headings use Spectral for academic feel */
+ h1, h2, h3, h4,
+ .section-header .title,
+ .brand span {
+   font-family: 'Spectral', ui-serif, Georgia, serif;
+   font-weight: 600;
+   color: var(--text);
+   letter-spacing: .2px;
+ }
+ 
+ /* --- Header + Nav --- */
+ header {
+   background: var(--primary);
+   color: #fff;
+   position: sticky; top: 0;
+   width: 100%; z-index: 999;
+   box-shadow: var(--shadow);
+ }
+ .container {
+   width: 90%;
+   max-width: 1100px;
+   margin: auto;
+ }
+ .navbar {
+   display:flex; align-items:center; justify-content:space-between;
+   padding: .8rem 0;
+ }
+ .brand {
+   display:flex; align-items:center; gap:.5rem;
+   font-size:1.25rem; font-weight:600; color:#fff;
+ }
+ .nav-links { display:flex; gap:1rem; }
+ .nav-links a {
+   color:#fff; position:relative; padding:.4rem .65rem; border-radius:6px;
+   transition:color .25s ease;
+ }
+ .nav-links a::after {
+   content:""; position:absolute; left:0; bottom:-4px;
+   width:0; height:2px; background:var(--accent); transition:width .25s ease;
+ }
+ .nav-links a:hover { color:var(--accent); }
+ .nav-links a:hover::after { width:100%; }
+ 
+ /* Mobile nav */
+ .hamburger { display:none; flex-direction:column; gap:.3rem; cursor:pointer; }
+ .hamburger span { width:25px; height:3px; background:#fff; border-radius:2px; }
+ 
+ .mobile-menu {
+   display:none; flex-direction:column;
+   background:var(--primary);
+   position:absolute; top:100%; left:0; width:100%;
+ }
+ .mobile-menu.open { display:flex; }
+ .mobile-menu a {
+   color:#fff; padding:.75rem 1rem; border-top:1px solid rgba(255,255,255,.15);
+ }
+ 
+ /* Responsiveness */
+ @media (max-width: 768px){
+   .nav-links{ display:none; }
+   .hamburger{ display:flex; }
+ }
+ @media (min-width: 769px){
+   .mobile-menu{ display:none !important; }
+ }
+ 
+ /* --- Layout Sections --- */
+ section { padding: 2.5rem 0; }
+ .section-header { margin-bottom:1.75rem; }
+ .section-header .kicker {
+   font-size:.8rem; color:var(--accent); text-transform:uppercase; letter-spacing:.08em;
+ }
+ .section-header .desc { max-width:650px; color:var(--muted); }
+ 
+ /* Grid utilities */
+ .grid { display:grid; gap:1.2rem; }
+ .grid-2 { grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); }
+ 
+ /* --- Cards --- */
+ .card {
+   background:#fff; border:1px solid var(--border);
+   border-radius:10px; padding:1.2rem; display:flex; flex-direction:column; gap:.6rem;
+   box-shadow:var(--shadow);
+   transition:.25s ease;
+ }
+ .card p { color:var(--muted); }
+ .card:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:var(--shadow-hover); }
+ 
+ /* --- Buttons --- */
+ .btn {
+   display:inline-block; padding:.55rem 1rem;
+   background:var(--accent); color:#fff; border-radius:8px;
+   font-weight:600; box-shadow:var(--shadow);
+   transition:.25s ease;
+ }
+ .btn:hover { background:#4c93cf; transform:translateY(-2px); box-shadow:var(--shadow-hover); }
+ 
+ /* --- Coursework Table --- */
+ table.course-table { width:100%; border-collapse:collapse; }
+ .course-table th, .course-table td {
+   padding:.65rem; border-bottom:1px solid var(--border); font-size:.95rem;
+ }
+ .course-table th { background:#f9fafc; font-weight:600; }
+ 
+ /* --- Footer --- */
+ footer {
+   background:var(--primary); color:#fff;
+   text-align:center; padding:1.2rem 0; font-size:.88rem;
+ }
+ 
+ /* --- Marquee refined --- */
+ .flashing-title-container{ overflow:hidden; width:100%; margin-bottom:1rem; }
+ .flashing-title{
+   display:inline-block; white-space:nowrap;
+   font-family:'Spectral', serif;
+   font-weight:500; font-size:1.15rem;
+   color:var(--primary); opacity:.78;
+   animation: marqueeScroll 18s linear infinite, softFade 6s ease-in-out infinite;
+ }
+ @keyframes marqueeScroll{
+   0%{ transform:translateX(100%); }
+   100%{ transform:translateX(-115%); }
+ }
+ @keyframes softFade{
+   0%,100%{ opacity:.78; }
+   50%{ opacity:.92; }
+ }
+ .flashing-title:hover{ opacity:1; transition:opacity .5s ease; }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+ .mobile-menu {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity .25s ease, transform .25s ease;
 }
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header and navigation */
-header {
-  background-color: var(--primary);
-  color: #ffffff;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.8rem 0;
-}
-
-.brand {
-  font-size: 1.25rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #ffffff;
-}
-
-.brand svg {
-  height: 24px;
-  width: 24px;
-  fill: currentColor;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-links a {
-  color: #ffffff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.95rem;
-  transition: background-color 0.2s ease;
-}
-
-.nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Hamburger for mobile */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 0.3rem;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 2px;
-}
-
-/* Mobile menu */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: var(--primary);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-menu.show {
-  display: flex;
-}
-
-.mobile-menu a {
-  color: #ffffff;
-  padding: 0.75rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.95rem;
-}
-
-.mobile-menu a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Section styling */
-section {
-  padding: 2rem 0;
-}
-
-.section-header {
-  margin-bottom: 1.5rem;
-}
-
-.section-header .kicker {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
-}
-
-.section-header .title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.section-header .desc {
-  font-size: 1rem;
-  color: var(--muted);
-  max-width: 650px;
-}
-
-/* Grid utilities */
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-/* Card component */
-.card {
-  background-color: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  flex-grow: 1;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.55rem 1rem;
-  border-radius: 4px;
-  background-color: var(--accent);
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
-
-/* Provide a darker shade for button hover without relying on CSS functions */
-.btn:hover {
-  background-color: #3b6f9a;
-}
-
-/* KPI / stats */
-.kpis {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.kpi {
-  text-align: center;
-}
-
-.kpi b {
-  font-size: 2rem;
-  color: var(--primary);
-}
-
-.kpi span {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-/* Simple table styles for coursework and similar sections */
-table.course-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.5rem;
-}
-table.course-table th,
-table.course-table td {
-  padding: 0.6rem;
-  border-bottom: 1px solid #e6e6e6;
-  font-size: 0.95rem;
-  text-align: left;
-}
-table.course-table th {
-  background-color: #f9fafc;
-  font-weight: 600;
-}
-
-/* Footer */
-footer {
-  background-color: var(--primary);
-  color: #ffffff;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.85rem;
-}
-
-/* Responsive helpers */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-
-@media (min-width: 769px) {
-  .mobile-menu {
-    display: none !important;
-  }
+.mobile-menu.open {
+  opacity: 1;
+  transform: translateY(0);
 }

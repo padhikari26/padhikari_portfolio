@@ -27,7 +27,7 @@
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="projects.html" class="active">Projects</a>
+          <a href="projects.html" class="active" aria-current="page">Projects</a>
           <a href="achievements.html">Achievements</a>
           <a href="activities.html">Activities</a>
           <a href="coursework.html">Coursework</a>
@@ -60,11 +60,8 @@
     <section style="padding:3rem 0; text-align:center;">
       <div class="container" style="max-width:900px;">
         <h1 style="font-size:2.25rem; margin-bottom:0.5rem;">Projects & Creations</h1>
-        <p style="font-size:1.1rem; color:var(--muted); line-height:1.6;">
-          My portfolio showcases projects at the intersection of research, technology, and community impact. From analyzing COVID-19 trends with Python to building apps that help people connect, each project reflects my curiosity, persistence, and desire to create meaningful solutions.
-        </p>
         <p style="font-size:1.1rem; color:var(--muted); line-height:1.6; margin-top:0.5rem;">
-          These projects are a snapshot of my journey as a student, developer, and problem solver. I’m constantly exploring new technologies, refining my skills, and expanding the impact of my work.
+          A snapshot of how I learn: identify a real problem, ship an MVP, gather feedback, iterate. Below are selected projects across data science, AI, and community software where I focused on clarity, usefulness, and impact.
         </p>
       </div>
     </section>
@@ -75,7 +72,7 @@
         <div class="section-header">
           <span class="kicker">Projects</span>
           <h2 class="title">Featured Work</h2>
-          <p class="desc">A selection of my work in data science, AI, and community-focused software development — highlighting my skills in research, coding, and problem-solving.</p>
+          <p class="desc">Research, code, and community-centered builds. Each project notes the problem, what I made, the impact, and the skills I strengthened.</p>
         </div>
 
         <div class="grid grid-2">
@@ -83,54 +80,66 @@
           <!-- COVID-19 Research Project -->
           <div class="card" id="covid-research">
             <h3>COVID-19 Data Science Research</h3>
-            <p>Completed a 6-week research program with <strong>The Coding School</strong>, analyzing global public health datasets to identify pandemic trends using Python, Pandas, and Matplotlib. Findings were presented at a student symposium in College Park, MD.</p>
-            <p>Skills & Growth: Data cleaning, exploratory data analysis, visualization, and presenting technical findings to diverse audiences.</p>
+            <p><strong>Problem:</strong> How do vaccination rates and deaths move together across countries, and which policy timings are most associated with better outcomes?</p>
+            <p><strong>What I built:</strong> A 6-week analysis with <strong>The Coding School</strong> using Python, Pandas, and Matplotlib on the Johns Hopkins dataset to visualize time-series trends and intervention timing.</p>
+            <p><strong>Impact:</strong> Earlier quarantines and faster vaccine uptake were <em>associated</em> with fewer deaths and quicker recovery trends; I presented the findings at a student symposium in College Park, MD.</p>
+            <p><strong>Skills & Growth:</strong> Data cleaning, EDA, visualization, and translating technical results for non-technical audiences. <em>Next:</em> add confidence intervals and country clusters for clearer comparisons.</p>
             <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
-              <a href="#" class="btn">Research Paper</a>
-              <a href="#" class="btn" style="background-color:var(--primary);">View Code</a>
+              <a href="#" class="btn" aria-label="Open research paper (placeholder)">Research Paper</a>
+              <a href="#" class="btn" style="background-color:var(--primary);" aria-label="Open code repository (placeholder)">View Code</a>
             </div>
           </div>
 
           <!-- NAFA Samaj App -->
           <div class="card" id="nafa-samaj">
             <h3>NAFA Samaj App</h3>
-            <p>Developed an iOS app for the Nepalese community in Arizona to share events, updates, and resources. Designed to foster connection and engagement among users.</p>
-            <p>Skills & Growth: iOS app development, community-focused design, and deploying functional applications to real users.</p>
+            <p><strong>Problem:</strong> The Nepalese community in Arizona needed one place to organize events, share updates, and stay connected.</p>
+            <p><strong>What I built:</strong> A community app for announcements, event listings, and resources to help members coordinate and communicate.</p>
+            <p><strong>Impact:</strong> Members can quickly discover events and updates; early adoption shows promise (<em>placeholder users</em>). <em>Next:</em> add calendar sync, role-based access, and feedback forms.</p>
+            <p><strong>Skills & Growth:</strong> Mobile app development, community-focused product thinking, and feedback-driven iteration.</p>
             <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
-              <a href="#" class="btn">Project Details</a>
-              <a href="#" class="btn" style="background-color:var(--primary);">View Code</a>
+              <a href="#" class="btn" aria-label="Open project details page (placeholder)">Project Details</a>
+              <a href="#" class="btn" style="background-color:var(--primary);" aria-label="Open code repository (placeholder)">View Code</a>
             </div>
           </div>
 
           <!-- Inspirit AI Sustainable Farming -->
           <div class="card" id="inspirit-ai">
             <h3>Sustainable Crop Yield Prediction</h3>
-            <p>Built machine learning models predicting crop yield based on soil bacteria composition using Australian datasets. Compared Linear Regression, KNN, Decision Trees, and Random Forest; Random Forest performed best.</p>
-            <p>Skills & Growth: Regression modeling, feature importance, agricultural AI, and model evaluation.</p>
+            <p><strong>Problem:</strong> Feeding a growing population requires higher yields with lower environmental cost; can soil-microbe data help predict crop output?</p>
+            <p><strong>What I built:</strong> ML models (Linear Regression, KNN, Decision Trees, Random Forest) on Australian soil-bacteria datasets to predict yield; Random Forest performed best in baseline tests.</p>
+            <p><strong>Impact:</strong> Established a viable baseline and roadmap: add moisture, pH, and sunlight features; test expanded ensembles; prune for interpretability; trial on additional farms.</p>
+            <p><strong>Skills & Growth:</strong> Regression modeling, feature importance, evaluation, and framing ML results for real stakeholders.</p>
             <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
-              <a href="#" class="btn">Presentation</a>
+              <a href="#" class="btn" aria-label="Open project presentation (placeholder)">Presentation</a>
             </div>
           </div>
 
           <!-- Care100 Healthcare App -->
           <div class="card" id="care100">
             <h3>Care100</h3>
-            <p>Designed a productivity app for healthcare employees to submit missed work hours digitally, reducing paperwork delays and improving workflow efficiency.</p>
-            <p>Skills & Growth: UI/UX design, workflow optimization, and accessibility-focused app development.</p>
+            <p><strong>Problem:</strong> Healthcare staff lost time and accuracy submitting missed work hours with paper-based processes.</p>
+            <p><strong>What I built:</strong> A streamlined digital workflow to submit and track missed hours, reducing delays and manual errors.</p>
+            <p><strong>Impact:</strong> Clearer submissions and faster processing (pilot metrics: <em>placeholder</em>). <em>Next:</em> role-based permissions and audit trails for compliance.</p>
+            <p><strong>Skills & Growth:</strong> UI/UX for operations, accessibility-minded design, and mapping real user journeys.</p>
             <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
-              <a href="#" class="btn">Project Details</a>
+              <a href="#" class="btn" aria-label="Open project details page (placeholder)">Project Details</a>
             </div>
           </div>
 
-          <!-- Placeholder for Future Projects -->
-          <div class="card future-project">
-            <h3>Future Project</h3>
-            <p>Excited to add upcoming projects here! Space reserved for new initiatives in research, AI, community apps, and other tech-driven solutions.</p>
+          <!-- Harvard Bootcamp Capstone -->
+          <div class="card" id="harvardproject">
+            <h3>Harvard AI Bootcamp — Capstone</h3>
+            <p><strong>Problem:</strong> Understand the practical capabilities and limits of modern multimodal models.</p>
+            <p><strong>What I built:</strong> Experiments with models like GPT-4o across text, image, and audio I/O to learn implementation details, prompt tuning, and evaluation.</p>
+            <p><strong>Impact:</strong> Built confidence implementing multimodal pipelines and deciding when to choose classic algorithms vs. LLMs; documented prompts and results for reproducibility.</p>
+            <p><strong>Skills & Growth:</strong> Prompt design, evaluation mindset, hands-on I/O integration. <em>Next:</em> prototype a small multimodal study helper.</p>
           </div>
 
+          <!-- Future Project -->
           <div class="card future-project">
             <h3>Future Project</h3>
-            <p>More projects will be showcased here as I continue building, experimenting, and learning in technology and research.</p>
+            <p>Work in progress. I’m currently exploring Flutter development, SQL, Java, C++, and graph algorithms—expect a shipped MVP here soon.</p>
           </div>
 
         </div>

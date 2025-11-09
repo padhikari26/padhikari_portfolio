@@ -11,7 +11,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/main.js"></script>
-  <meta name="description" content="Portfolio of Purnima — high school student, aspiring Computer Science major, researcher, and tech-builder. Projects include COVID-19 data research, community apps, Python Bootcamp teaching, and AI development." />
+  <meta name="description" content="I’m Purnima—high school senior, student researcher, and aspiring CS major. I build practical CS tools for learning and community, I’m open and willing to learn with the right resources, and I want to make an impact. Highlights: COVID-19 research, NAFA Samaj app, Python bootcamp teaching." />
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -21,14 +21,14 @@
   <header>
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-current="page">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="28" height="28">
             <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
           </svg>
           <span>Purnima</span>
         </a>
         <div class="nav-links">
-          <a href="index.html">Home</a>
+          <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="achievements.html">Achievements</a>
@@ -41,7 +41,7 @@
           <span></span><span></span><span></span>
         </div>
         <div class="mobile-menu" aria-label="Mobile menu">
-          <a href="index.html">Home</a>
+          <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="achievements.html">Achievements</a>
@@ -61,11 +61,19 @@
     <section style="padding-top:3rem;">
       <div class="container grid grid-2" style="align-items:center; gap:2rem;">
         <div>
-          <h1 style="font-size:2.5rem;margin-bottom:0.25rem;">Student Researcher | Aspiring CS Major | Building Tools for Learning, Community, and Impact</h1>
-          
-          <p style="font-size:1.15rem;color:var(--muted);max-width:680px;line-height:1.5;">
-            I’m a high school senior passionate about Computer Science, research, and building tools that make an impact. From analyzing COVID-19 data to creating community apps and teaching Python overseas, I’ve blended technical curiosity with real-world problem-solving. My journey began after moving to the United States at age seven and exploring coding through Scratch, school websites, and increasingly advanced AI and data science projects.
+          <div class="flashing-title-container" aria-live="polite">
+            <p class="flashing-title">
+              Student Researcher | Aspiring CS Major | Building Tools for Learning, Community, and Impact
+            </p>
+          </div>                    
+          <p style="font-size:1.15rem;color:var(--muted);max-width:680px;line-height:1.55;">
+            Hi, I’m Purnima. I’m drawn to computer science because it’s a space where curiosity and purpose meet. 
+            I’ve explored this through data science research, community-centered app development, and teaching a 
+            Python bootcamp for students in Nepal who have limited access to CS learning. I care about using technology 
+            to understand patterns, tell real stories, and support communities in meaningful ways. For me, learning to 
+            build isn’t just about solving problems. Tt’s about helping people feel seen, connected, and supported.
           </p>
+          
 
           <div style="margin-top:1.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
             <a href="projects.html" class="btn" aria-label="Explore Projects">Explore Projects</a>
@@ -76,50 +84,21 @@
           <div style="margin-top:1.8rem; display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem;">
             <a href="projects.html#covid-research" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
               <h3 style="margin:0 0 0.4rem 0;">COVID-19 Research</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Analyzed Johns Hopkins data; presented insights at a student symposium in College Park, MD.</p>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Intro to data science using JHU data—ignited my interest in CS & math; presented findings in College Park, MD.</p>
             </a>
             <a href="projects.html#nafa-samaj" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
               <h3 style="margin:0 0 0.4rem 0;">NAFA Samaj App</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Built a community-focused app connecting Nepalese students and families in Arizona.</p>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Community directory & announcements connecting Nepalese students and families; shipped MVP and iterated.</p>
             </a>
             <a href="projects.html#eaglefc" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
               <h3 style="margin:0 0 0.4rem 0;">EagleFC — Athletics</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Club soccer taught leadership, teamwork, and persistence—skills I bring to every project.</p>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Midfield experience that built teamwork, resilience, and fast decision-making—skills I bring to tech projects.</p>
             </a>
           </div>
         </div>
 
         <div style="text-align:center;">
-          <img src="cached_assets_used/ai_concept.jpg" alt="Abstract artificial intelligence concept with network nodes and data visualization" style="width:100%;border-radius:12px;object-fit:cover;" />
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section aria-labelledby="about-heading" style="padding:2rem 0;">
-      <div class="container" style="max-width:900px;">
-        <h2 id="about-heading" style="margin-bottom:0.75rem;">About Me</h2>
-        
-        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          Moving to the U.S. at age seven, I discovered a fascination for technology early on. From Scratch games to full websites, and later AI and data science projects, I’ve pursued learning that combines curiosity with impact.
-        </p>
-
-        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          My COVID-19 research leveraged public datasets from Johns Hopkins to analyze trends across countries. Presenting findings at a symposium in College Park, MD strengthened my technical and communication skills.
-        </p>
-
-        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          I also launched a Python Bootcamp to teach students overseas and developed <strong>NAFA Samaj</strong>, a community app connecting people. These experiences taught me leadership, patience, and how technology can empower others.
-        </p>
-
-        <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          Outside of technology, I play club soccer with <strong>EagleFC</strong>. The persistence and teamwork I’ve learned on the field translate directly to my coding, research, and project management.
-        </p>
-
-        <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
-          <a href="projects.html" class="btn">See detailed projects</a>
-          <a href="resume.html" class="btn" style="background-color:var(--primary);">Download Résumé</a>
-          <a href="contact.html" class="btn" style="background-color:transparent;border:1px solid var(--primary);color:var(--primary);">Contact Me</a>
+          <img src="cached_assets_used/ai_concept.jpg" alt="Abstract AI network visualization representing data, models, and connections" style="width:100%;border-radius:12px;object-fit:cover;" />
         </div>
       </div>
     </section>
@@ -131,15 +110,17 @@
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
           <div class="card" style="flex:1; min-width:200px;">
             <h4 style="margin-top:0;">Technical Skills</h4>
-            <p style="margin:0;color:var(--muted);">Python · Flask · HTML/CSS · Git/GitHub · Pandas · Matplotlib · SQL basics</p>
+            <p style="margin:0;color:var(--muted);">Python · Flask · HTML/CSS · Git/GitHub · Pandas · Matplotlib · SQL (basic)</p>
           </div>
           <div class="card" style="flex:1; min-width:200px;">
             <h4 style="margin-top:0;">Highlights</h4>
             <ul style="margin:0;color:var(--muted);padding-left:1rem;">
-              <li>COVID-19 research presented at a symposium</li>
-              <li>Launched NAFA Samaj — community app</li>
-              <li>Started Python Bootcamp teaching overseas students</li>
-              <li>Club soccer (EagleFC) — leadership & teamwork</li>
+              <li>COVID-19 research presented at a symposium; sparked long-term interest in CS & math</li>
+              <li>Launched <em>NAFA Samaj</em> — community app (impact metrics: <em>placeholder</em>)</li>
+              <li>Founded and taught a Python Bootcamp for overseas students (<em>placeholder students</em>)</li>
+              <li>Club soccer (EagleFC): leadership & teamwork (regional placements: <em>placeholder</em>)</li>
+              <li>Programs: Girls Who Code, Harvard AI, Inspirit AI, The Coding School, Cyber Camp</li>
+              <li>Currently learning: <em>placeholder frameworks/tools</em></li>
             </ul>
           </div>
         </div>
@@ -149,7 +130,7 @@
   </main>
 
   <footer>
-    © <span id="year"></span> Purnima • All rights reserved
+    © <span id="year"></span> Purnima • All rights reserved • GitHub: padhikari26 • Contact: purnima.adhikari820@gmail.com
   </footer>
 
   <script>
