@@ -3,34 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects • Purnima Adhikari</title>
+  <title>Projects • Purnima</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/main.js"></script>
-  <meta name="description" content="Explore projects by Purnima Adhikari, including machine learning models, open source contributions and hackathon prototypes." />
+  <meta name="description" content="Explore Purnima's projects in data science, AI, and community impact. Learn about her COVID-19 research, NAFA Samaj app, and more." />
 </head>
 <body>
-  <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
   <header>
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
         <a class="brand" href="index.html">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" /></svg>
-          <span>Purnima Adhikari</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="28" height="28">
+            <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
+          </svg>
+          <span>Purnima</span>
         </a>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
+          <a href="projects.html" class="active">Projects</a>
           <a href="achievements.html">Achievements</a>
           <a href="activities.html">Activities</a>
           <a href="coursework.html">Coursework</a>
           <a href="resume.html">Résumé</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0"><span></span><span></span><span></span></div>
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="mobile-menu" aria-label="Mobile menu">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -45,62 +53,110 @@
     </div>
   </header>
 
-  <main id="main">
-    <section style="padding-top:3rem;">
+  <!-- Main Content -->
+  <main id="main" tabindex="-1">
+
+    <!-- Tagline / Intro Section -->
+    <section style="padding:3rem 0; text-align:center;">
+      <div class="container" style="max-width:900px;">
+        <h1 style="font-size:2.25rem; margin-bottom:0.5rem;">Projects & Creations</h1>
+        <p style="font-size:1.1rem; color:var(--muted); line-height:1.6;">
+          My portfolio showcases projects at the intersection of research, technology, and community impact. From analyzing COVID-19 trends with Python to building apps that help people connect, each project reflects my curiosity, persistence, and desire to create meaningful solutions.
+        </p>
+        <p style="font-size:1.1rem; color:var(--muted); line-height:1.6; margin-top:0.5rem;">
+          These projects are a snapshot of my journey as a student, developer, and problem solver. I’m constantly exploring new technologies, refining my skills, and expanding the impact of my work.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section style="padding-top:2rem;">
       <div class="container">
         <div class="section-header">
           <span class="kicker">Projects</span>
-          <h2 class="title">Featured work</h2>
-          <p class="desc">Below are some of my favourite projects. Each has taught me something new about algorithms, data and how to turn an idea into a working product. Click through to learn more, see screenshots, watch demo videos and explore the code.</p>
+          <h2 class="title">Featured Work</h2>
+          <p class="desc">A selection of my work in data science, AI, and community-focused software development — highlighting my skills in research, coding, and problem-solving.</p>
         </div>
+
         <div class="grid grid-2">
-          <!-- ThreatModel AI project card -->
-          <div class="card">
-            <h3>COVID-19 Research</h3>
-            <p>A real‑time anomaly detection system built to flag unusual activity in network traffic. Achieves <strong>94% accuracy</strong> using unsupervised machine learning techniques such as Isolation Forests and k‑NN. Developed in Python with scikit‑learn and deployed as a REST API.</p>
-            <p>What I learned: streaming data processing, model evaluation, and the importance of model explainability for security applications.</p>
-            <!-- Optional embedded video placeholder; replace src with your own video link -->
-            <video controls style="width:100%;border-radius:8px;margin-top:0.5rem;" poster="" src=""></video>
-            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+
+          <!-- COVID-19 Research Project -->
+          <div class="card" id="covid-research">
+            <h3>COVID-19 Data Science Research</h3>
+            <p>Completed a 6-week research program with <strong>The Coding School</strong>, analyzing global public health datasets to identify pandemic trends using Python, Pandas, and Matplotlib. Findings were presented at a student symposium in College Park, MD.</p>
+            <p>Skills & Growth: Data cleaning, exploratory data analysis, visualization, and presenting technical findings to diverse audiences.</p>
+            <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
+              <a href="#" class="btn">Research Paper</a>
+              <a href="#" class="btn" style="background-color:var(--primary);">View Code</a>
+            </div>
+          </div>
+
+          <!-- NAFA Samaj App -->
+          <div class="card" id="nafa-samaj">
+            <h3>NAFA Samaj App</h3>
+            <p>Developed an iOS app for the Nepalese community in Arizona to share events, updates, and resources. Designed to foster connection and engagement among users.</p>
+            <p>Skills & Growth: iOS app development, community-focused design, and deploying functional applications to real users.</p>
+            <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
               <a href="#" class="btn">Project Details</a>
               <a href="#" class="btn" style="background-color:var(--primary);">View Code</a>
             </div>
           </div>
-          <!-- Open source contributions card -->
-          <div class="card">
-            <h3>Inspirit AI: Sustainable Farming</h3>
-            <p>I’ve contributed to <strong>4</strong> open‑source projects ranging from documentation improvements and bug fixes to adding new features. My pull requests have been merged into projects such as <em>ExampleLib</em> and <em>DataViz.js</em>.</p>
-            <p>What I learned: Through model predication, farmers can predict crop yield based on various types of soil bacterica in their farmland. This can essentially help in choosing which location has the highest crop capacity for better crop production.</p>
-            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
-              <a href="#" class="btn">See contributions</a>
+
+          <!-- Inspirit AI Sustainable Farming -->
+          <div class="card" id="inspirit-ai">
+            <h3>Sustainable Crop Yield Prediction</h3>
+            <p>Built machine learning models predicting crop yield based on soil bacteria composition using Australian datasets. Compared Linear Regression, KNN, Decision Trees, and Random Forest; Random Forest performed best.</p>
+            <p>Skills & Growth: Regression modeling, feature importance, agricultural AI, and model evaluation.</p>
+            <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
+              <a href="#" class="btn">Presentation</a>
             </div>
           </div>
-          <div class="card">
-            <h3>NRNA: AI In Education Essay</h3>
-            <p></p>
-            <p>What I learned: The future of education relies on the balanced use of AI and traditional teaching methods, making sure that learners of all backgrounds are included in today’s century along with many more to come.</p>
-            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
+
+          <!-- Care100 Healthcare App -->
+          <div class="card" id="care100">
+            <h3>Care100</h3>
+            <p>Designed a productivity app for healthcare employees to submit missed work hours digitally, reducing paperwork delays and improving workflow efficiency.</p>
+            <p>Skills & Growth: UI/UX design, workflow optimization, and accessibility-focused app development.</p>
+            <div style="margin-top:0.7rem; display:flex; gap:0.7rem;">
               <a href="#" class="btn">Project Details</a>
             </div>
           </div>
-          <!-- Placeholder for additional projects -->
-          <div class="card">
-            <h3>Your Next Project</h3>
-            <p>Use this template to showcase another project. You can include a short description, highlight the technologies used, embed a video demo or add screenshots. Be selective — lead with your most impressive work.</p>
-            <div style="margin-top:0.7rem;display:flex;gap:0.7rem;">
-              <a href="#" class="btn">Add Details</a>
-            </div>
+
+          <!-- Placeholder for Future Projects -->
+          <div class="card future-project">
+            <h3>Future Project</h3>
+            <p>Excited to add upcoming projects here! Space reserved for new initiatives in research, AI, community apps, and other tech-driven solutions.</p>
           </div>
+
+          <div class="card future-project">
+            <h3>Future Project</h3>
+            <p>More projects will be showcased here as I continue building, experimenting, and learning in technology and research.</p>
+          </div>
+
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> Purnima Adhikari • All rights reserved
+    © <span id="year"></span> Purnima • All rights reserved
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var hb = document.querySelector('.hamburger');
+      var menu = document.querySelector('.mobile-menu');
+      if (hb && menu) {
+        hb.addEventListener('click', function () {
+          menu.classList.toggle('open');
+        });
+        hb.addEventListener('keypress', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') menu.classList.toggle('open');
+        });
+      }
+    })();
   </script>
 </body>
 </html>

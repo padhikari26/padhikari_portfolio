@@ -3,31 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Purnima Adhikari</title>
-  <!-- Import Google Fonts -->
+  <title>Purnima • Student Researcher & Aspiring CS Major</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom styles -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Main script -->
   <script defer src="assets/js/main.js"></script>
-  <meta name="description" content="Portfolio of Purnima Adhikari — aspiring Computer Science undergraduate. Projects include COVID-19 research, community app NAFA Samaj, teaching Python and more." />
+  <meta name="description" content="Portfolio of Purnima — high school student, aspiring Computer Science major, researcher, and tech-builder. Projects include COVID-19 data research, community apps, Python Bootcamp teaching, and AI development." />
 </head>
 <body>
-  <!-- Accessible skip link for screen readers -->
+  <!-- Accessible skip link -->
   <a class="skip-link" href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 
-  <!-- Site header with navigation -->
+  <!-- Header Navigation -->
   <header>
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
         <a class="brand" href="index.html">
-          <!-- Simple star icon as logo -->
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="28" height="28">
             <path d="M12 2l3.5 6.5L22 9l-5 4 1.5 7L12 16l-6.5 4L7 13 2 9l6.5-.5L12 2z" stroke="currentColor" />
           </svg>
-          <span>Purnima Adhikari</span>
+          <span>Purnima</span>
         </a>
         <div class="nav-links">
           <a href="index.html">Home</a>
@@ -40,9 +38,7 @@
           <a href="contact.html">Contact</a>
         </div>
         <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
         <div class="mobile-menu" aria-label="Mobile menu">
           <a href="index.html">Home</a>
@@ -58,15 +54,17 @@
     </div>
   </header>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main id="main" tabindex="-1">
+
     <!-- Hero Section -->
     <section style="padding-top:3rem;">
       <div class="container grid grid-2" style="align-items:center; gap:2rem;">
         <div>
-          <h1 style="font-size:2.5rem;margin-bottom:0.5rem;">Hi — I'm Purnima Adhikari</h1>
+          <h1 style="font-size:2.5rem;margin-bottom:0.25rem;">Student Researcher | Aspiring CS Major | Building Tools for Learning, Community, and Impact</h1>
+          
           <p style="font-size:1.15rem;color:var(--muted);max-width:680px;line-height:1.5;">
-            I’m a high school senior applying to Computer Science programs. I build data-driven tools, conduct research, and teach programming — driven by a desire to create meaningful impact in my community. My journey began after moving to the United States at age seven; since first grade I’ve explored computing through scratch programs, school websites, and increasingly sophisticated projects in AI, data science, and cybersecurity.
+            I’m a high school senior passionate about Computer Science, research, and building tools that make an impact. From analyzing COVID-19 data to creating community apps and teaching Python overseas, I’ve blended technical curiosity with real-world problem-solving. My journey began after moving to the United States at age seven and exploring coding through Scratch, school websites, and increasingly advanced AI and data science projects.
           </p>
 
           <div style="margin-top:1.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
@@ -74,21 +72,19 @@
             <a href="resume.html" class="btn" style="background-color:var(--primary);" aria-label="View Résumé">View Résumé</a>
           </div>
 
-          <!-- Hero tiles: three priority stories -->
+          <!-- Hero Tiles -->
           <div style="margin-top:1.8rem; display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem;">
             <a href="projects.html#covid-research" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
               <h3 style="margin:0 0 0.4rem 0;">COVID-19 Research</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Analyzed JHU CSSE data; presented findings at a student symposium in College Park, MD.</p>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Analyzed Johns Hopkins data; presented insights at a student symposium in College Park, MD.</p>
             </a>
-
             <a href="projects.html#nafa-samaj" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
-              <h3 style="margin:0 0 0.4rem 0;">NAFA Samaj (App)</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Launched a community-focused app — designed and built the backend & core features.</p>
+              <h3 style="margin:0 0 0.4rem 0;">NAFA Samaj App</h3>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Built a community-focused app connecting Nepalese students and families in Arizona.</p>
             </a>
-
             <a href="projects.html#eaglefc" class="card" style="text-decoration:none;color:inherit;display:block;padding:0.9rem;border-radius:8px;">
               <h3 style="margin:0 0 0.4rem 0;">EagleFC — Athletics</h3>
-              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Club soccer experience taught me leadership, persistence, and teamwork — skills I apply to technical projects.</p>
+              <p style="margin:0;font-size:0.95rem;color:var(--muted);">Club soccer taught leadership, teamwork, and persistence—skills I bring to every project.</p>
             </a>
           </div>
         </div>
@@ -99,81 +95,71 @@
       </div>
     </section>
 
-    <!-- About / Introduction section -->
+    <!-- About Section -->
     <section aria-labelledby="about-heading" style="padding:2rem 0;">
       <div class="container" style="max-width:900px;">
-        <h2 id="about-heading" style="margin-bottom:0.75rem;">About me</h2>
-
+        <h2 id="about-heading" style="margin-bottom:0.75rem;">About Me</h2>
+        
         <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          I moved to the United States when I was seven and began school in first grade. Over the years, computers moved from being a hobby to a clear passion — I started with Scratch and Code.org lessons, then built simple school websites. Each project pushed me to learn a new concept: HTML and CSS for layouts, Python for logic, then data analysis and machine learning for research questions, and fundamentals of cybersecurity for safe systems.
+          Moving to the U.S. at age seven, I discovered a fascination for technology early on. From Scratch games to full websites, and later AI and data science projects, I’ve pursued learning that combines curiosity with impact.
         </p>
 
         <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          My COVID-19 research used public datasets from Johns Hopkins to explore trends in infections and outcomes across countries; I documented my process in reproducible notebooks and presented key findings at a symposium in College Park, MD. That project taught me not only technical skills — data cleaning, visualization, and basic statistical testing — but also how to explain technical results to an audience from many backgrounds.
+          My COVID-19 research leveraged public datasets from Johns Hopkins to analyze trends across countries. Presenting findings at a symposium in College Park, MD strengthened my technical and communication skills.
         </p>
 
         <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          To turn learning into service, I launched a Python Bootcamp and teach students overseas who are beginning their programming journeys. Teaching has sharpened my explanations, improved my patience, and shown me how empowered learners can become when given the right guidance. I also launched <strong>NAFA Samaj</strong>, a community app that reflects my interest in building tools that help people connect and share resources.
+          I also launched a Python Bootcamp to teach students overseas and developed <strong>NAFA Samaj</strong>, a community app connecting people. These experiences taught me leadership, patience, and how technology can empower others.
         </p>
 
         <p style="margin-bottom:0.75rem; color:var(--muted); line-height:1.6;">
-          Outside of technology, I play club soccer for <strong>EagleFC</strong>. Competing on the field taught me how to manage time, lead small teams, and keep pushing when a solution isn’t obvious — the same persistence that helps me debug tricky code. I’m applying to study Computer Science in college because I want to advance my technical skills and scale the impact of the projects I build — especially those that help communities and create learning opportunities for others.
-        </p>
-
-        <p style="margin-bottom:0.5rem; color:var(--muted); line-height:1.6;">
-          If you’d like, I can share more detailed project pages (with screenshots, code, and slides), a one-page résumé, or a downloadable portfolio PDF. I’m also happy to add short video demos or a few quick testimonials from students I’ve taught.
+          Outside of technology, I play club soccer with <strong>EagleFC</strong>. The persistence and teamwork I’ve learned on the field translate directly to my coding, research, and project management.
         </p>
 
         <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
           <a href="projects.html" class="btn">See detailed projects</a>
-          <a href="resume.html" class="btn" style="background-color:var(--primary);">Download résumé</a>
-          <a href="contact.html" class="btn" style="background-color:transparent;border:1px solid var(--primary);color:var(--primary);">Contact me</a>
+          <a href="resume.html" class="btn" style="background-color:var(--primary);">Download Résumé</a>
+          <a href="contact.html" class="btn" style="background-color:transparent;border:1px solid var(--primary);color:var(--primary);">Contact Me</a>
         </div>
       </div>
     </section>
 
-    <!-- Quick "What I bring" skills summary -->
+    <!-- What I Bring Section -->
     <section aria-labelledby="skills-heading" style="padding-bottom:3rem;">
       <div class="container" style="max-width:900px;">
-        <h3 id="skills-heading" style="margin-bottom:0.6rem;">What I bring</h3>
+        <h3 id="skills-heading" style="margin-bottom:0.6rem;">What I Bring</h3>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
           <div class="card" style="flex:1; min-width:200px;">
-            <h4 style="margin-top:0;">Technical skills</h4>
-            <p style="margin:0;color:var(--muted);">Python · Flask · HTML/CSS · Git/GitHub · pandas · matplotlib · SQL basics</p>
+            <h4 style="margin-top:0;">Technical Skills</h4>
+            <p style="margin:0;color:var(--muted);">Python · Flask · HTML/CSS · Git/GitHub · Pandas · Matplotlib · SQL basics</p>
           </div>
           <div class="card" style="flex:1; min-width:200px;">
             <h4 style="margin-top:0;">Highlights</h4>
             <ul style="margin:0;color:var(--muted);padding-left:1rem;">
-              <li>Presented COVID-19 research at a symposium</li>
-              <li>Launched NAFA Samaj (community app)</li>
-              <li>Started a Python Bootcamp teaching students overseas</li>
+              <li>COVID-19 research presented at a symposium</li>
+              <li>Launched NAFA Samaj — community app</li>
+              <li>Started Python Bootcamp teaching overseas students</li>
               <li>Club soccer (EagleFC) — leadership & teamwork</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
-    © <span id="year"></span> Purnima Adhikari • All rights reserved
+    © <span id="year"></span> Purnima • All rights reserved
   </footer>
 
   <script>
-    // Insert current year into footer
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Basic accessibility enhancement: make hamburger open mobile nav if main.js isn't present
     (function () {
       var hb = document.querySelector('.hamburger');
       var menu = document.querySelector('.mobile-menu');
       if (hb && menu) {
-        hb.addEventListener('click', function () {
-          menu.classList.toggle('open');
-        });
-        hb.addEventListener('keypress', function (e) {
-          if (e.key === 'Enter' || e.key === ' ') menu.classList.toggle('open');
-        });
+        hb.addEventListener('click', function () { menu.classList.toggle('open'); });
+        hb.addEventListener('keypress', function (e) { if (e.key === 'Enter' || e.key === ' ') menu.classList.toggle('open'); });
       }
     })();
   </script>
