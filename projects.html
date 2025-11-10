@@ -171,5 +171,24 @@
       }
     })();
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hash = window.location.hash;
+      if (!hash) return;
+
+      const card = document.querySelector(hash);
+      if (card && card.classList.contains("card")) {
+        card.classList.add("highlight");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        // Optional: remove highlight after a few seconds
+        setTimeout(() => {
+          card.classList.remove("highlight");
+        }, 4500);
+      }
+    });
+  </script>
+
 </body>
 </html>
